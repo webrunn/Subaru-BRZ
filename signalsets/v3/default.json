@@ -43,7 +43,7 @@
   ]},
     { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "10E5"}, "freq": 5, "filter": { "to": 2019 },
   "signals": [
-    {"id": "BRZ_ODO2", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer22", "suggestedMetric": "odometer"}
+    {"id": "BRZ_ODO2", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer22", "suggestedMetric": "odometer2"}
   ]},
   { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1233"}, "freq": 0.25, "filter": { "to": 2019 },
   "signals": [
