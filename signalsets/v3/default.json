@@ -47,15 +47,15 @@
   ]},
   { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1233"}, "freq": 0.25, "filter": { "to": 2019 },
   "signals": [
-    {"id": "BRZ_BRAKE_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "" "div":2.55}, "name": "Brake Pressed"}
+    {"id": "BRZ_BRAKE_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "", "div":2.55}, "name": "Brake Pressed"}
   ]},
   { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "122F"}, "freq": 0.25, "filter": { "to": 2019 },
   "signals": [
-    {"id": "BRZ_CLUTCH_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "" "div":2.55}, "name": "Clutch Pressed"}
+    {"id": "BRZ_CLUTCH_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "", "div":2.55}, "name": "Clutch Pressed"}
   ]},
   { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "41"}, "freq": 0.25, "filter": { "to": 2019 },
   "signals": [
-    {"id": "BRZ_BRAKE_PCT", "path": "Control", "fmt": { "len": 8, "max": 255, "min": 0, "add": -10"mul": 1.1, "unit": "" }, "name": "Brake Percent"}
+    {"id": "BRZ_BRAKE_PCT", "path": "Control", "fmt": { "len": 8, "max": 255, "min": 0, "add": -10, "mul": 1.1, "unit": "" }, "name": "Brake Percent"}
   ]},
 
   { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "51"}, "freq": 1,
