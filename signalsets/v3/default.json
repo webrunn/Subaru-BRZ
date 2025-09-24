@@ -37,6 +37,27 @@
   "signals": [
     {"id": "BRZ_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "liters" }, "name": "Fuel level (volume)", "suggestedMetric": "fuelTankLevel"}
   ]},
+  { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "28"}, "freq": 5, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "BRZ_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+    { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "10E5"}, "freq": 5, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "BRZ_ODO2", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer22", "suggestedMetric": "odometer"}
+  ]},
+  { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1233"}, "freq": 0.25, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "BRZ_BRAKE_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "" "div":2.55}, "name": "Brake Pressed"}
+  ]},
+  { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "122F"}, "freq": 0.25, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "BRZ_CLUTCH_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 255, "unit": "" "div":2.55}, "name": "Clutch Pressed"}
+  ]},
+  { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "41"}, "freq": 0.25, "filter": { "to": 2019 },
+  "signals": [
+    {"id": "BRZ_BRAKE_PCT", "path": "Control", "fmt": { "len": 8, "max": 255, "min": 0, "add": -10"mul": 1.1, "unit": "" }, "name": "Brake Percent"}
+  ]},
+
   { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "51"}, "freq": 1,
   "signals": [
     {"id": "BRZ_PREV_TRIP_DST", "path": "Trips",  "fmt": {"bix": 40, "len": 16, "max": 655.35,             "div": 100,             "unit": "kilometers" }, "name": "Previous trip distance"},
