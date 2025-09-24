@@ -62,7 +62,7 @@
   "signals": [
     {"id": "BRZ_PREV_TRIP_DST", "path": "Trips",  "fmt": {"bix": 40, "len": 16, "max": 655.35,             "div": 100,             "unit": "kilometers" }, "name": "Previous trip distance"},
     {"id": "BRZ_VVTOT",         "path": "Engine", "fmt": {"bix": 56, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Variable valve timing oil temperature"},
-    {"id": "BRZ_EOT",    ok       "path": "Engine", "fmt": {"bix": 72, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Engine oil temperature"}
+    {"id": "BRZ_EOT",           "path": "Engine", "fmt": {"bix": 72, "len": 8,  "max": 215,    "min": -40,             "add": -40, "unit": "celsius"    }, "name": "Engine oil temperature"}
   ]}
 ]
 }
