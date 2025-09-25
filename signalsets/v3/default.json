@@ -44,7 +44,7 @@
     
   { "hdr": "7D0", "rax": "7E8", "cmd": {"21": "62"}, "freq": 1, "filter": { "to": 2019 },
     "signals": [
-        {"id": "BRZ_PARKING_BRAKE", "path": "Control", "name": "Parking Brake" "fmt": { "len": 8,"map": {
+        {"id": "BRZ_PARKING_BRAKE", "path": "Control", "name": "Parking Brake", "fmt": { "len": 8,"map": {
           "0": { "description": "", "value": "Off" },
           "2": { "description": "", "value": "On" }
       }}
