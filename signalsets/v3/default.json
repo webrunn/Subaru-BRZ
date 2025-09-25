@@ -37,7 +37,7 @@
   "signals": [
       {"id": "BRZ_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "liters" }, "name": "Fuel level (volume)", "suggestedMetric": "fuelTankLevel"}
   ]},
-  { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "10E5"}, "freq": 5, "filter": { "to": 2019 },
+  { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10E5"}, "freq": 5, "filter": { "to": 2019 },
   "signals": [
       {"id": "BRZ_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
