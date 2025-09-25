@@ -22,6 +22,7 @@
     {"id": "BRZ_TIRE_RL_SPD", "path": "Movement", "fmt": {"bix": 16, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "BRZ_TIRE_RR_SPD", "path": "Movement", "fmt": {"bix": 24, "len": 8, "max": 326.4, "mul": 256, "div": 200, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
+  
   { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "47"}, "freq": 0.25, "filter": { "to": 2019 },
   "signals": [
     {"id": "BRZ_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,    "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
@@ -29,26 +30,15 @@
     {"id": "BRZ_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,    "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value (deg/sec)"},
     {"id": "BRZ_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276.7, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle"}
   ]},
+  
   { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "21"}, "freq": 5, "filter": { "to": 2019 },
   "signals": [
       {"id": "BRZ_CC_SPD", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"}
   ]},
+  
   { "hdr": "7C0", "rax": "7C8", "cmd": {"21": "29"}, "freq": 1, "filter": { "to": 2019 },
   "signals": [
       {"id": "BRZ_FLI_VOL", "path": "Fuel", "fmt": { "len": 8, "max": 127.5, "div": 2, "unit": "liters" }, "name": "Fuel level (volume)", "suggestedMetric": "fuelTankLevel"}
-  ]},
-  { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "10E5"}, "freq": 5, "filter": { "to": 2019 },
-  "signals": [
-      {"id": "BRZ_ODO", "path": "Trips", "fmt": { "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
-  ]},
-    
-  { "hdr": "7D0", "rax": "7E8", "cmd": {"21": "62"}, "freq": 1, "filter": { "to": 2019 },
-    "signals": [
-        {"id": "BRZ_PARKING_BRAKE", "path": "Control", "name": "Parking Brake", "fmt": { "len": 8,"map": {
-          "0": { "description": "", "value": "Off" },
-          "2": { "description": "", "value": "On" }
-      }}
-  }
   ]},
   
   { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "1233"}, "freq": 0.25, "filter": { "to": 2019 },
@@ -59,11 +49,6 @@
   { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "122F"}, "freq": 0.25, "filter": { "to": 2019 },
   "signals": [
       {"id": "BRZ_CLUTCH_PRESSED", "path": "Control", "fmt": { "len": 8, "max": 127, "div":2.55, "unit": ""}, "name": "Clutch Pressed"}
-  ]},
- 
-  { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "41"}, "freq": 0.25, "filter": { "to": 2019 },
-  "signals": [
-      {"id": "BRZ_BRAKE_PCT", "path": "Control", "fmt": { "len": 8, "max": 127, "min": 0, "mul": 1, "unit": "pct" }, "name": "Brake Percent"}
   ]},
 
   { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "51"}, "freq": 1,
